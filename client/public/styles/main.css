@@ -1,0 +1,46 @@
+html,body{
+   height:100%;
+}
+img {
+  height: 100vh;
+}
+
+.instagram-plug{
+    text-transform: uppercase;
+	background: linear-gradient(to top right, yellow 0%, purple 0%, red 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.about-text {
+    font-size: 200%;
+}
+
+.languages {
+    font-size: 600%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.fa-js-square{
+    color: rgb(235, 235, 111);
+}
+
+.fa-java{
+    text-transform: uppercase;
+	background: linear-gradient(to top, darkblue 10%, red 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.fa-python{
+    color: darkblue;
+}
+
+.font-50{
+    font-size: 150%;
+}
+.font-25{
+    font-size: 125%;
+}

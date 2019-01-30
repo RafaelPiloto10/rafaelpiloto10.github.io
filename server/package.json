@@ -1,0 +1,16 @@
+{
+  "name": "portfolio.serverside",
+  "version": "0.0.0",
+  "description": "My personal, digital portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Rafael Piloto (rafaelpiloto10.now.sh)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
