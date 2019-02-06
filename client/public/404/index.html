@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rafael Piloto - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="resources/favicon-code.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+</head>
+
+<body style="width: 100vw; height: 100vh; background-image: url(../resources/404.jpg);">
+    <!-- Nav Bar -->
+    <nav id="navbar" class="fixed-top navbar-dark text-center">
+        <a class="navbar-brand" href="/">
+            <i class="fa fa-code d-inline-block align-top" width="30" height="30" aria-hidden="true"></i>
+            Rafael Piloto
+        </a>
+    </nav>
+
+    <div class="container">
+        <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+            <div class="toast" style="position: absolute; top: 30%; right: 0;" data-delay=3000>
+                <div class="toast-header">
+                    <img src="../resources/personal.JPG" class="rounded mr-2" style="width:15%;height:15%;">
+                    <strong class="mr-auto">Rafael Piloto</strong>
+                    <small>recent</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    You searched for a page that does not exist!
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <h1 class="display-3">Uh-Oh!</h1>
+            <p class="lead">404 Could not find page</p>
+            <hr class="my-2">
+            <p>You searched for a page that has not been created yet.
+                If this is an error please leave me a message at the home page.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/" role="button">Take me back to home page</a>
+            </p>
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- Footer - Social Media plugs-->
+    <footer>
+        <nav class="navbar-dark bg-dark" style="position:fixed; bottom: 0px; width: 100vw;">
+            <div class="text-center">
+                <span style="color: white; float: left; margin-top: 1%;">&copy; Rafael Piloto</span>
+                <a class="navbar-brand" href="https://github.com/RafaelPiloto10">
+                    <i class="fab fa-github-square h1"></i>
+                </a>
+                <a class="navbar-brand" href="https://www.instagram.com/rafael.1010/" style="padding-left: 1%;">
+                    <i class="fab fa-instagram h1 instagram-plug"></i>
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<script>
+    $(".toast").toast("show");
+</script>
+
+</html>

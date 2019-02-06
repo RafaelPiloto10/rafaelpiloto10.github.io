@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rafael Piloto - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="resources/favicon-code.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
@@ -81,11 +82,11 @@
             </div>
             <div class="col-6 ">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">A.P.O.L.L.O,
-                        or A Pretty Original Lovely-Looking Orgranism, is my personal assitant. A J.A.R.V.I.S clone
-                        from Iron Man if you will. I programmed it in JavaScript and used various APIs such as the
-                        YouTube v3 API and the Open Weather API. Check out my GitHub A.P.O.L.L.O repository to learn
-                        more.
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        A.P.O.L.L.O, or A Pretty Original Lovely-Looking Organism, is my personal assistant. A
+                        J.A.R.V.I.S clone from Iron Man if you will. I programmed it in JavaScript and used various
+                        APIs such as the YouTube v3 API and the Open Weather API. Check out my GitHub A.P.O.L.L.O
+                        repository to learn more.
                         <div>
                             <hr class="my-4">
                             <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/A.P.O.L.L.O"
@@ -93,7 +94,9 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-
+                        I created this chess game using Java during my free time in my AP Computer Science Class.
+                        I learned a little about time complexity, Java graphics, and array manipulation. It was
+                        a fun project and I hope to refactor and improve on it some time soon.
                         <div>
                             <hr class="my-4">
                             <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/JavaChess"
@@ -101,7 +104,10 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-
+                        This was my first original idea. I found an everyday problem I was having - too much
+                        English homework and "find the author's tone" problems - and tried to come up with a
+                        solution using what I know best: Computer Science! It was an interesting and insightful
+                        project and I hope to make more of it in the future.
                         <div>
                             <hr class="my-4">
                             <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/English-Tone-Sentiment-Analysis"
@@ -109,7 +115,11 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-
+                        This project was mainly for me to learn as an individual. I struggled understanding
+                        how to separate the back end and front end of a website. I followed a YouTube video by
+                        the Coding Train, which featured the Coding Garden in which he made a Twitter Clone app.
+                        It definitely helped me learn what a full stack website was, how it can be created, and how
+                        to work with databases.
                         <div>
                             <hr class="my-4">
                             <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/Twitter-Clone"
@@ -129,13 +139,13 @@
                 <h1 class="display-3">About Me</h1>
                 <hr class="my-2">
                 <p class="lead about-text">
-                    I am currently a Junior in High School who will be persuing a degree in
+                    I am currently a Junior in High School who will be pursuing a degree in
                     Computer Science after graduation. I am comfortable with Java, JavaScript, Bash, and Python. I am
                     familiar with Batch and the C variants. I am incredibly interested in a wide variety of computer
-                    science topics ranging from Artifical Intelligence to Cyber Security. I like to play
+                    science topics ranging from Artificial Intelligence to Cyber Security. I like to play
                     video-games, watch Netflix/YouTube, and improve my programming skills on my spare time as well as
                     develop personal projects. I like to play two sports, my favorite being tennis. Education
-                    has always be a priorty of mine, mathematics being my favorite subject.
+                    has always be a priority of mine, mathematics being my favorite subject.
                 </p>
             </div>
             <div class="col-lg-6">
@@ -159,38 +169,138 @@
             </div>
         </div>
     </div>
+    <br><br><br>
+    <!-- Toast -->
+    <div class="container">
+        <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+            <div class="toast" style="position: absolute; top: 0; right: 0;" data-autohide="false">
+                <div class="toast-header">
+                    <img src="resources/personal.JPG" class="rounded mr-2" style="width:15%;height:15%;">
+                    <strong class="mr-auto">Rafael Piloto</strong>
+                    <small>recent</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    Your message has been sent! I will get back to you ASAP!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container form-container">
+        <h1 class="display-3">Contact</h1>
+        <hr class="my-3">
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <!-- First Name input -->
+                <div class="col-md-6 mb-12">
+                    <label for="validationFname">First name</label>
+                    <input type="text" class="form-control" name="fname" id="validationFname" placeholder="first name"
+                        pattern="[a-zA-Z\.,
+                    
+                    ']+" required>
+                    <div class="invalid-feedback">
+                        Invalid first name!
+                    </div>
+                </div>
+
+                <!-- Last Name input -->
+                <div class="col-md-6 mb-12">
+                    <label for="validationLname">Last name</label>
+                    <input type="text" class="form-control" id="validationLname" name="lname" placeholder="last name"
+                        pattern="[a-zA-Z\.,
+                    
+                    ']+" required>
+                    <div class="invalid-feedback">
+                        Invalid last name!
+                    </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="col-md-6 mb-12">
+                    <label for="validationEmail">Email</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="validationEmail" name="email" placeholder="email"
+                            pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]*\.[a-zA-Z]+" required>
+                        <div class="invalid-feedback">
+                            Invalid email!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone number input -->
+                <div class="col-md-6 mb-12">
+                    <label for="validationPhoneNumber">Phone Number</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="validationPhoneNumber" name="phonenumber"
+                            placeholder="phone number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                            required>
+                        <div class="invalid-feedback">
+                            Invalid phone number!
+                        </div>
+                    </div>
+                </div>
+                <!-- Message input -->
+                <div class="col-12">
+                    <label for="validationMessage">Message</label>
+                    <div class="input-group">
+                        <textarea type="text" class="form-control" id="validationMessage" name="message" rows="3"
+                            required></textarea>
+                        <div class="invalid-feedback">
+                            Invalid message!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agreement check box -->
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="checkbox" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Send my details
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+        <!-- Spinner -->
+        <div class="loading">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
 
     <br><br><br>
     <!-- Footer - Social Media plugs-->
     <footer>
         <nav class="navbar-light bg-light text-center">
+            <span class="copy-right">&copy; Rafael Piloto</span>
             <a class="navbar-brand" href="https://github.com/RafaelPiloto10">
                 <i class="fab fa-github-square h1"></i>
             </a>
             <a class="navbar-brand" href="https://www.instagram.com/rafael.1010/">
                 <i class="fab fa-instagram h1 instagram-plug"></i>
             </a>
+
         </nav>
     </footer>
-
 </body>
-<script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-50px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-</script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+<script src="client.js"></script>
 
 </html>
