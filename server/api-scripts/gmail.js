@@ -35,7 +35,7 @@ function sendEmail(EMAIL, PASS, TO, NAME, MESSAGE) {
             service: 'gmail',
             auth: {
                 user: EMAIL.toString(),
-                pass: PASS
+                pass: PASS.toString()
             }
         });
 
@@ -45,11 +45,11 @@ function sendEmail(EMAIL, PASS, TO, NAME, MESSAGE) {
             subject: "Form Submission",
             text: message
         } : {
-                from: EMAIL.toString(),
-                to: TO.toString(),
-                subject: "Form Submission",
-                html: message
-            };
+            from: EMAIL.toString(),
+            to: TO.toString(),
+            subject: "Form Submission",
+            html: message
+        };
 
         transporter.sendMail(mailOptions, function (error, info) {
             transporter.close();
