@@ -1,4 +1,5 @@
 let nodemailer = require('nodemailer');
+// https://www.google.com/accounts/DisplayUnlockCaptcha
 
 function sendEmail(EMAIL, PASS, TO, NAME, MESSAGE) {
     return new Promise((resolve, reject) => {
