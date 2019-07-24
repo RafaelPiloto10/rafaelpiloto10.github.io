@@ -39,4 +39,5 @@ app.get("*", (req, res) => {
 
 app.listen(port, () => {
     console.log("Server is up and running");
+    console.log(process.env.EMAIL, process.ENV.PASS);
 });
