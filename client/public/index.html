@@ -7,10 +7,10 @@
     <title>Rafael Piloto - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="resources/favicon-code.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 </head>
@@ -69,38 +69,60 @@
         <div class="row">
             <div class="col-6 font-50">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-secondary list-group-item-action active" id="list-home-list"
-                        data-toggle="list" href="#list-home" role="tab" aria-controls="home">A.P.O.L.L.O</a>
-                    <a class="list-group-item list-group-item-secondary list-group-item-action" id="list-profile-list"
-                        data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Java Chess</a>
+                    <a class="list-group-item list-group-item-secondary list-group-item-action active"
+                        id="list-home-list" data-toggle="list" href="#list-home" role="tab"
+                        aria-controls="home">A.P.O.L.L.O</a>
+                    <a class="list-group-item list-group-item-secondary list-group-item-action" id="list-messages-list"
+                        data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Spotify Mood
+                        Recommender API</a>
+                    <a class="list-group-item list-group-item-secondary list-group-item-action" id="list-messages-list"
+                        data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">FRC Robotics</a>
                     <a class="list-group-item list-group-item-secondary list-group-item-action" id="list-messages-list"
                         data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">English Tone
                         Sentiment Analysis</a>
+                    <a class="list-group-item list-group-item-secondary list-group-item-action" id="list-profile-list"
+                        data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Java Chess</a>
+
                     <a class="list-group-item list-group-item-secondary list-group-item-action" id="list-settings-list"
                         data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Twitter Clone</a>
                 </div>
             </div>
             <div class="col-6 ">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
                         A.P.O.L.L.O, or A Pretty Original Lovely-Looking Organism, is my personal assistant. A
                         J.A.R.V.I.S clone from Iron Man if you will. I programmed it in JavaScript and used various
-                        APIs such as the YouTube v3 API and the Open Weather API. Check out my GitHub A.P.O.L.L.O
+                        APIs such as the YouTube v3 API and the Open Weather API for my Senior Seminar project. Check
+                        out my GitHub A.P.O.L.L.O
                         repository to learn more.
                         <div>
                             <hr class="my-4">
-                            <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/A.P.O.L.L.O"
-                                target="_blank">A.P.O.L.L.O Repository</a>
+                            <a class="btn btn-primary" aria-pressed="true"
+                                href="https://github.com/RafaelPiloto10/A.P.O.L.L.O" target="_blank">A.P.O.L.L.O
+                                Repository</a>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                        I created this chess game using Java during my free time in my AP Computer Science Class.
-                        I learned a little about time complexity, Java graphics, and array manipulation. It was
-                        a fun project and I hope to refactor and improve on it some time soon.
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        I always struggle trying to find new songs. I know what kind of mood I am in and what I am
+                        looking for, but it's difficult to find songs that relate to this mood. By using Sentiment
+                        Analysis and TensorFlow Deep Learning Neural Networks, I was able to create an API hosted on the
+                        internet that can recommend songs based on either a target song or a sentence.
                         <div>
                             <hr class="my-4">
-                            <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/JavaChess"
-                                target="_blank">Java Chess Repository</a>
+                            <a class="btn btn-primary" aria-pressed="true"
+                                href="https://github.com/RafaelPiloto10/Spotify-Mood-Recommender"
+                                target="_blank">Spotify Mood Repository</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        As a main contributor to the Digital Eagles FRC Team 5667, I was able to contribute to a lot of
+                        cool projects! Check out the team's repository to see all of the amazing things we were able to
+                        create as well as my contributions towards them!
+                        <div>
+                            <hr class="my-4">
+                            <a class="btn btn-primary" aria-pressed="true"
+                                href="https://github.com/NAHSRobotics-Team5667/" target="_blank">FRC Repository</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
@@ -110,8 +132,20 @@
                         project and I hope to make more of it in the future.
                         <div>
                             <hr class="my-4">
-                            <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/English-Tone-Sentiment-Analysis"
+                            <a class="btn btn-primary" aria-pressed="true"
+                                href="https://github.com/RafaelPiloto10/English-Tone-Sentiment-Analysis"
                                 target="_blank">Tone Analysis Repository</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        I created this chess game using Java during my free time in my AP Computer Science Class.
+                        I learned a little about time complexity, Java graphics, and array manipulation. It was
+                        a fun project and I hope to refactor and improve on it some time soon.
+                        <div>
+                            <hr class="my-4">
+                            <a class="btn btn-primary" aria-pressed="true"
+                                href="https://github.com/RafaelPiloto10/JavaChess" target="_blank">Java Chess
+                                Repository</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
@@ -122,8 +156,9 @@
                         to work with databases.
                         <div>
                             <hr class="my-4">
-                            <a class="btn btn-primary" aria-pressed="true" href="https://github.com/RafaelPiloto10/Twitter-Clone"
-                                target="_blank">Twitter Clone Repository</a>
+                            <a class="btn btn-primary" aria-pressed="true"
+                                href="https://github.com/RafaelPiloto10/Twitter-Clone" target="_blank">Twitter Clone
+                                Repository</a>
                         </div>
                     </div>
                 </div>
@@ -139,13 +174,15 @@
                 <h1 class="display-3">About Me</h1>
                 <hr class="my-2">
                 <p class="lead about-text">
-                    I am currently a Junior in High School who will be pursuing a degree in
+                    I am currently a Senior in High School who will be pursuing a degree in
                     Computer Science after graduation. I am comfortable with Java, JavaScript, Bash, and Python. I am
                     familiar with Batch and the C variants. I am incredibly interested in a wide variety of computer
                     science topics ranging from Artificial Intelligence to Cyber Security. I like to play
                     video-games, watch Netflix/YouTube, and improve my programming skills on my spare time as well as
-                    develop personal projects. I like to play two sports, my favorite being tennis. Education
-                    has always be a priority of mine, mathematics being my favorite subject.
+                    develop personal projects. I like to play two sports, my favorite being tennis. I am a part of the
+                    Digital Eagles FRC Robotics team 5667. I am their current robot operator and a main contributor to
+                    the programming team! Education has always be a priority of mine, mathematics being my favorite
+                    subject.
                 </p>
             </div>
             <div class="col-lg-6">
@@ -295,12 +332,15 @@
     </footer>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+</script>
 <script src="client.js"></script>
 
 </html>
