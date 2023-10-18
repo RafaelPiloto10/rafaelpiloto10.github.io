@@ -10,7 +10,7 @@
 	});
 </script>
 
-<div class="w-full flex flex-row items-center justify-center">
+<div class="flex w-full flex-row items-center justify-center">
 	<div class="flex w-full max-w-screen-2xl flex-col items-center justify-center">
 		<About />
 		{#if mounted}

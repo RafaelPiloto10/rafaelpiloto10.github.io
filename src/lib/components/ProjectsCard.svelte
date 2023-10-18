@@ -12,11 +12,11 @@
 
 <div
 	transition:scale
-	class="flex w-full sm:max-w-[450px] sm:min-w-[450px] flex-col rounded-lg border border-[#1e1e1e] p-4"
+	class="flex w-full flex-col rounded-lg border border-[#1e1e1e] p-4 sm:min-w-[450px] sm:max-w-[450px]"
 >
 	{#if img !== ''}
 		<div class="flex w-full flex-row items-center justify-center">
-			<img class="mb-4 object-fit max-h-[230px] rounded" src={img} alt="project" />
+			<img class="object-fit mb-4 max-h-[230px] rounded" src={img} alt="project" />
 		</div>
 	{/if}
 

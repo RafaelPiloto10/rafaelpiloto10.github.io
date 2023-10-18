@@ -81,7 +81,7 @@
 >
 	<div class="flex flex-col justify-center gap-2 pt-16">
 		<h1 class="text-center text-6xl font-bold text-white">Experience</h1>
-		<div class="experience-container mb-32 flex flex-col gap-8 py-16 px-2">
+		<div class="experience-container mb-32 flex flex-col gap-8 px-2 py-16">
 			{#each experiences as experience}
 				{#if $tagFilters.length === 0 || experience.tags.filter((t) => $tagFilters.indexOf(t) >= 0).length > 0}
 					<ExperienceCard
