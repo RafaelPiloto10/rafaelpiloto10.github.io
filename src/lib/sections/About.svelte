@@ -25,7 +25,7 @@
 			<div class="flex flex-col items-end justify-center gap-2">
 				<h1 class="text-center text-5xl font-bold sm:text-6xl">👋 Howdy.</h1>
 				<h1 class="text-center text-5xl font-bold sm:text-6xl">I am Rafael.</h1>
-				<div class="flex flex-row gap-4 text-white">
+				<div class="flex flex-row gap-4 bg-gradient-to-tr from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text">
 					<a href="mailto:rpilotojr10@gmail.com">
 						<i class="fa-regular fa-envelope fa-xl" />
 					</a>

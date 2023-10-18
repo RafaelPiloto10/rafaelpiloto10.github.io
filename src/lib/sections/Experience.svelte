@@ -84,7 +84,9 @@
 	<div class="flex min-h-screen w-full snap-start flex-row items-center justify-center gap-16">
 		<div class="flex flex-col justify-center gap-2 pt-16">
 			<h1 class="text-center text-6xl font-bold text-white">Experience</h1>
-			<div class="experience-container mb-32 flex flex-col gap-8 px-2 py-16">
+			<div
+				class="mb-32 flex flex-col gap-8 px-2 py-16 sm:bg-gradient-to-b sm:from-white sm:to-white sm:bg-[length:2px_100%] sm:bg-center sm:bg-no-repeat"
+			>
 				{#each experiences as experience}
 					{#if $tagFilters.length === 0 || experience.tags.filter((t) => $tagFilters.indexOf(t) >= 0).length > 0}
 						<ExperienceCard
@@ -101,9 +103,3 @@
 		</div>
 	</div>
 {/if}
-
-<style>
-	.experience-container {
-		background: linear-gradient(#fff, #fff) no-repeat center/2px 100%;
-	}
-</style>
