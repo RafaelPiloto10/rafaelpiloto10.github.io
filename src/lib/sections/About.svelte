@@ -15,7 +15,7 @@
 			transition:scale={{ delay: 100, duration: 750 }}
 			class="flex h-full w-full flex-col items-center justify-center gap-16 sm:flex-row"
 		>
-			<img class="h-64 w-64 rounded-full" src="pfp.png" alt="Profile" />
+			<img class="h-64 w-64 rounded-full" src="pfp.jpeg" alt="Profile" />
 			<div class="flex flex-col items-end justify-center gap-2">
 				<h1 class="text-center text-5xl font-bold sm:text-6xl">👋 Howdy.</h1>
 				<h1 class="text-center text-5xl font-bold sm:text-6xl">I am Rafael.</h1>
