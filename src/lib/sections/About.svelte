@@ -2,15 +2,17 @@
 	import { onMount } from 'svelte';
 	import { scale } from 'svelte/transition';
 
+	let element: HTMLDivElement;
 	let mounted = false;
 
 	onMount(() => {
 		mounted = true;
+		element.scrollIntoView();
 	});
 </script>
 
 {#if mounted}
-	<div class="flex h-screen w-full snap-center flex-col items-center p-8">
+	<div bind:this={element} class="flex h-screen w-full snap-center flex-col items-center p-8">
 		<div
 			transition:scale={{ delay: 100, duration: 750 }}
 			class="flex h-full w-full flex-col items-center justify-center gap-16 sm:flex-row"

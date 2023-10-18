@@ -7,7 +7,6 @@
 	let mounted = false;
 	onMount(() => {
 		mounted = true;
-		window.scrollTo(0, 0);
 	});
 </script>
 
