@@ -4,10 +4,14 @@
 
 	let element: HTMLDivElement;
 	let mounted = false;
+	let mountChildren = false;
 
 	onMount(() => {
 		mounted = true;
-		element.scrollIntoView();
+		setTimeout(() => {
+			mountChildren = true;
+			element.scrollIntoView();
+		}, 10);
 	});
 </script>
 
@@ -39,4 +43,8 @@
 		</div>
 		<span class="animate-bounce"><i class="fa-solid fa-arrow-down fa-xl" /></span>
 	</div>
+
+	{#if mountChildren}
+		<slot />
+	{/if}
 {/if}

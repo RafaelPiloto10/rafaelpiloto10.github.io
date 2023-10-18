@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { scale } from 'svelte/transition';
 	import { tagFilters } from '../../stores';
 	import ProjectsCard from '$lib/components/ProjectsCard.svelte';
+	import { onMount } from 'svelte';
 
 	let projects = [
 		{
@@ -52,28 +52,31 @@
 			tags: []
 		}
 	];
+	let mounted = false;
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
-<div
-	in:scale={{ delay: 100, duration: 750 }}
-	class="flex min-h-screen w-full snap-start flex-row items-center justify-center gap-16"
->
-	<div class="flex w-full flex-col items-center justify-center gap-2 overflow-hidden pt-16">
-		<h1 class="text-center text-6xl font-bold text-white">Projects</h1>
-		<div class="flex flex-row overflow-scroll p-2 pb-8 pt-16 sm:w-5/6">
-			<div class="flex w-full flex-col gap-8 sm:flex-row">
-				{#each projects as project}
-					{#if $tagFilters.length === 0 || project.tags.filter((t) => $tagFilters.indexOf(t) >= 0).length > 0}
-						<ProjectsCard
-							name={project.name}
-							img={project.img}
-							github={project.github}
-							description={project.description}
-							tags={project.tags}
-						/>
-					{/if}
-				{/each}
+{#if mounted}
+	<div class="flex min-h-screen w-full snap-start flex-row items-center justify-center gap-16">
+		<div class="flex w-full flex-col items-center justify-center gap-2 overflow-hidden pt-16">
+			<h1 class="text-center text-6xl font-bold text-white">Projects</h1>
+			<div class="flex flex-row overflow-scroll p-2 pb-8 pt-16 sm:w-5/6">
+				<div class="flex w-full flex-col gap-8 sm:flex-row">
+					{#each projects as project}
+						{#if $tagFilters.length === 0 || project.tags.filter((t) => $tagFilters.indexOf(t) >= 0).length > 0}
+							<ProjectsCard
+								name={project.name}
+								img={project.img}
+								github={project.github}
+								description={project.description}
+								tags={project.tags}
+							/>
+						{/if}
+					{/each}
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+{/if}

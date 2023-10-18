@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ExperienceCard from '$lib/components/ExperienceCard.svelte';
-	import { scale } from 'svelte/transition';
+	import { onMount } from 'svelte';
 	import { tagFilters } from '../../stores';
 
 	let experiences = [
@@ -73,30 +73,34 @@
 			tags: ['Python', 'Reinforcement Learning', 'Deep Learning', 'GCP']
 		}
 	];
+
+	let mounted = false;
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
-<div
-	in:scale={{ delay: 100, duration: 750 }}
-	class="flex min-h-screen w-full snap-start flex-row items-center justify-center gap-16"
->
-	<div class="flex flex-col justify-center gap-2 pt-16">
-		<h1 class="text-center text-6xl font-bold text-white">Experience</h1>
-		<div class="experience-container mb-32 flex flex-col gap-8 px-2 py-16">
-			{#each experiences as experience}
-				{#if $tagFilters.length === 0 || experience.tags.filter((t) => $tagFilters.indexOf(t) >= 0).length > 0}
-					<ExperienceCard
-						position={experience.position}
-						company={experience.company}
-						img={experience.img}
-						date={experience.date}
-						description={experience.description}
-						tags={experience.tags}
-					/>
-				{/if}
-			{/each}
+{#if mounted}
+	<div class="flex min-h-screen w-full snap-start flex-row items-center justify-center gap-16">
+		<div class="flex flex-col justify-center gap-2 pt-16">
+			<h1 class="text-center text-6xl font-bold text-white">Experience</h1>
+			<div class="experience-container mb-32 flex flex-col gap-8 px-2 py-16">
+				{#each experiences as experience}
+					{#if $tagFilters.length === 0 || experience.tags.filter((t) => $tagFilters.indexOf(t) >= 0).length > 0}
+						<ExperienceCard
+							position={experience.position}
+							company={experience.company}
+							img={experience.img}
+							date={experience.date}
+							description={experience.description}
+							tags={experience.tags}
+						/>
+					{/if}
+				{/each}
+			</div>
 		</div>
 	</div>
-</div>
+{/if}
 
 <style>
 	.experience-container {
