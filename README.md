@@ -1,4 +1,4 @@
 # ⚠  This site has moved to:
 
-[rpiloto.codes](rpiloto.codes)
+[rpiloto.codes](https://rpiloto.codes)
 
