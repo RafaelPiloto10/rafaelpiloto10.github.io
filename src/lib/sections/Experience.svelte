@@ -30,7 +30,7 @@
 		},
 		{
 			position: 'Student Researcher',
-			company: 'Airforce Research Lab',
+			company: 'Air Force Research Lab',
 			img: 'icons/afrl.png',
 			date: 'Feb 2023 - May 2023',
 			description:
@@ -48,7 +48,7 @@
 		},
 		{
 			position: 'Student Researcher',
-			company: 'Airforce Research lab',
+			company: 'Air Force Research lab',
 			img: 'icons/afrl.png',
 			date: 'Aug 2021 - May 2022',
 			description:
@@ -66,7 +66,7 @@
 		},
 		{
 			position: 'Student Researcher',
-			company: 'Airforce Research Lab',
+			company: 'Air Force Research Lab',
 			img: 'icons/afrl.png',
 			date: 'Jan 2021 - Aug 2021',
 			description: `Refined reinforcement learning models for a robotic manufacturing process to optimize the propeller blade inspection process at Warner Robins Air Force Base. Abstracted model to reduce model configuration by over 80% with no required user-facing software`,
