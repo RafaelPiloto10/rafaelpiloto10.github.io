@@ -5,6 +5,27 @@
 
 	let projects = [
 		{
+			name: 'Guard AI',
+			github: 'https://github.com/guard-ai',
+			img: 'projects/guard-ai.png',
+			description: `Building cutting-edge technology that keeps you and your loved ones safe. Guard AI scans local first responder radio frequency and immediately notifies you of any public threats using end-to-end automation and AI.`,
+			tags: ['Expo', 'React Native', 'Golang', 'Python', 'Supabase']
+		},
+		{
+			name: 'Today!',
+			github: 'https://github.com/RafaelPiloto10/today',
+			img: 'projects/today.png',
+			description: `A blazingly simple, MacOS native menu app that tracks your todo items. No fluff, no analytics, no cloud accounts -- nada. Built in native SwiftUI for blazingly fast, native performance.`,
+			tags: ['Swift', 'Swift UI Kit']
+		},
+		{
+			name: 'Treblle Go Fiber',
+			github: 'https://github.com/RafaelPiloto10/treblle-go-fiber',
+			img: 'projects/treblle-go-fiber.png',
+			description: `Open Source port of Treblle SDK for Golang for projects using the Fiber framework. Fiber is an HTTP framework and Treblle is an HTTP logging cloud service with a lot of cool features!`,
+			tags: ['Open Source', 'Golang', 'Treblle', 'Fiber']
+		},
+		{
 			name: 'EduSearch',
 			github: 'https://github.com/RafaelPiloto10/edusearch',
 			img: 'projects/edusearch.png',
@@ -80,3 +101,4 @@
 		</div>
 	</div>
 {/if}
+
