@@ -1,40 +1,42 @@
 {
-  "name": "rafaelpiloto10.github.io",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss --check . && eslint .",
-    "format": "prettier --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss --write ."
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/adapter-vercel": "^5.3.2",
-    "@sveltejs/kit": "^2.5.16",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-svelte": "^2.40.0",
-    "postcss": "^8.4.38",
-    "prettier": "^3.3.2",
-    "prettier-plugin-svelte": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.5.14",
-    "svelte": "^4.2.18",
-    "svelte-check": "^3.8.1",
-    "tailwindcss": "^3.4.4",
-    "tslib": "^2.6.3",
-    "typescript": "^5.4.5",
-    "vite": "^4.5.3"
-  },
-  "type": "module",
-  "dependencies": {
-    "baseline-browser-mapping": "^2.9.19",
-    "caniuse-lite": "^1.0.30001768"
-  }
+	"name": "rafaelpiloto10.github.io",
+	"version": "0.0.1",
+	"private": true,
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss --check . && eslint .",
+		"format": "prettier --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/kit": "^2.5.16",
+		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"@typescript-eslint/parser": "^6.21.0",
+		"autoprefixer": "^10.4.19",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^8.10.0",
+		"eslint-plugin-svelte": "^2.40.0",
+		"postcss": "^8.4.38",
+		"prettier": "^3.3.2",
+		"prettier-plugin-svelte": "^3.2.4",
+		"prettier-plugin-tailwindcss": "^0.5.14",
+		"svelte": "^4.2.18",
+		"svelte-check": "^3.8.1",
+		"tailwindcss": "^3.4.4",
+		"tslib": "^2.6.3",
+		"typescript": "^5.4.5",
+		"vite": "^4.5.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"baseline-browser-mapping": "^2.9.19",
+		"caniuse-lite": "^1.0.30001768"
+	}
 }
