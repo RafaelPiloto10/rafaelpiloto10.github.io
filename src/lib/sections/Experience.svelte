@@ -6,9 +6,17 @@
 	let experiences = [
 		{
 			position: 'Software Engineer',
+			company: 'Tessera',
+			img: 'icons/tessera.png',
+			date: 'March 2026 - Present',
+			description: `Tessera compresses modernization from years to weeks with governed, multi-agent AI that unifies ERP and connected systems.`,
+			tags: ['...']
+		},
+		{
+			position: 'Software Engineer',
 			company: 'Google',
 			img: 'icons/google.png',
-			date: 'May 2024 - May 2025',
+			date: 'May 2025 - March 2026',
 			description: `Working with Payments Platform to enable payment processing of over $217M transactions per day at Google.`,
 			tags: ['Java', 'Guice', 'PSP2', '3DS']
 		},
