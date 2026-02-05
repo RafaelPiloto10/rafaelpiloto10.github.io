@@ -5,6 +5,22 @@
 
 	let experiences = [
 		{
+			position: 'Software Engineer',
+			company: 'Google',
+			img: 'icons/google.png',
+			date: 'May 2024 - May 2025',
+			description: `Working with Payments Platform to enable payment processing of over $217M transactions per day at Google.`,
+			tags: ['Java', 'Guice', 'PSP2', '3DS']
+		},
+		{
+			position: 'Software Engineer',
+			company: 'Google',
+			img: 'icons/google.png',
+			date: 'May 2024 - May 2025',
+			description: `Working with VM Services which owns critical infrastructure that helps run Google Cloud's Compute Engine`,
+			tags: ['C++', 'GCP', 'VM', 'Bazel', 'Abseil', 'Distributed Systems']
+		},
+		{
 			position: 'Lead Software Developer',
 			company: 'Reffy Inc',
 			img: 'icons/reffy.png',
